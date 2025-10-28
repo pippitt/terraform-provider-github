@@ -69,7 +69,7 @@ func TestAccGithubOrganizationCustomProperties(t *testing.T) {
 		`)
 
 		const resourceName = "github_organization_custom_properties.test"
-		
+
 		checkBefore := resource.ComposeTestCheckFunc(
 			resource.TestCheckResourceAttr(resourceName, "allowed_values.#", "1"),
 		)
